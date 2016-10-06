@@ -13,7 +13,7 @@
 public class Ejercicio02  {
   public static void main(String[] args) {  
     
-    System.out.print("Por favor introduzca una hora por teclado: ");
+    System.out.print("Por favor, introduzca una hora por teclado: ");
     int hora = Integer.parseInt(System.console().readLine());
     
     if ((hora >= 6) && (hora <= 11)) {
