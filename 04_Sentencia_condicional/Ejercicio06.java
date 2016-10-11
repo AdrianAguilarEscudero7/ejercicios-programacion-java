@@ -19,7 +19,7 @@ public class Ejercicio06  {
     if (altura < 0) {
       System.out.print("\n¡Error!, no hay solución real de la raíz cuadrada de un número negativo.");
     } else if(altura == 0) {
-      System.out.printf("\nEl objeto tardará en caer " + (int)formulaT + " segundos.");
+      System.out.print("\nEl objeto tardará en caer " + (int)formulaT + " segundos.");
     } else {
       System.out.printf("\nEl objeto tardará en caer %.3f segundos.", formulaT);
     }
