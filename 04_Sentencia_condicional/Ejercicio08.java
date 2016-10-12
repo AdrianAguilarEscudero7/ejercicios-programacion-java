@@ -22,7 +22,6 @@ public class Ejercicio08  {
       
     // Realizamos las operaciones matemáticas
     double media = ((nota1 + nota2 + nota3)/3);
-    double modulo = ((nota1 + nota2 + nota3)%3);
     
     // Establecemos las nuevas condiciones y mostramos las soluciones por pantalla
     if ((nota1 < 0) || (nota2 < 0) || (nota3 < 0)) {
