@@ -140,7 +140,7 @@ public class Ejercicio10 {
         }
       break;
       default: 
-        System.out.print("\n¡Error!, por favor, introduzca un número de día válido.");
+        System.out.print("\n¡Error!, por favor, introduzca un número de mes válido.");
       
       
     }
