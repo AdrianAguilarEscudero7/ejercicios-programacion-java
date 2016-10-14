@@ -13,7 +13,7 @@ public class Ejercicio10 {
   public static void main(String[] args) {
  
     // Introducimos los datos por teclado
-    System.out.print("\nPor favor, introduzca su mes de nacimiento: ");
+    System.out.print("\nPor favor, introduzca su mes de nacimiento (en números): ");
     int mes = Integer.parseInt(System.console().readLine());
     System.out.print("Ahora introduzca su día de nacimiento: ");
     int dia = Integer.parseInt(System.console().readLine());
@@ -141,8 +141,6 @@ public class Ejercicio10 {
       break;
       default: 
         System.out.print("\n¡Error!, por favor, introduzca un número de mes válido.");
-      
-      
     }
   }
 }
