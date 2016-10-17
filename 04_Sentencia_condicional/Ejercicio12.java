@@ -17,7 +17,7 @@ public class Ejercicio12 {
   
     // Presentamos el cuestionario e introducimos la primera pregunta
     System.out.println("\n¡BIENVENIDO AL MINICUESTIONARIO DE LA CLASE 1º DAW!");
-    System.out.println("\n· Se le van a realizar 10 preguntas tipo test de todas las asignaturas.");
+    System.out.println("\n· Se le va a realizar 10 preguntas tipo test de todas las asignaturas.");
     System.out.println("-----------------------------------------------------------------------");
     System.out.println("\nPregunta nº1. ¿En qué consiste la tecnología de integración de un microprocesador?.");
     System.out.println("a).- Es el tamaño de la oblea de silicio de cada microprocesador. ");
@@ -201,7 +201,7 @@ public class Ejercicio12 {
       System.out.println("\n¡Error!, por favor, introduzca una respuesta válida (a, b o c).");
     }
     
-    System.out.println("---------------------------------------------------------------------------------");
+    System.out.println("------------------------------------------------------------------------------");
     
     // Establecemos las condiciones de la puntuación final y mostramos el resultado por pantalla
     if (puntos < 5) {
