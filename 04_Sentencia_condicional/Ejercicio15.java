@@ -55,15 +55,15 @@ public class Ejercicio15 {
       case 3:
         System.out.print("\nPor favor, introduzca el carácter con el que desea crear la pirámide: ");
         String char3 = System.console().readLine().toUpperCase();
-        System.out.printf("\n    %9s", char3);
-        System.out.printf("\n   %8s %s", char3, char3);
-        System.out.printf("\n  %7s %s %s", char3, char3, char3);
-        System.out.printf("\n %6s %s %s %s", char3, char3, char3, char3);
+        System.out.printf("\n%13s", char3);
+        System.out.printf("\n%11s %s", char3, char3);
+        System.out.printf("\n%9s %s %s", char3, char3, char3);
+        System.out.printf("\n%7s %s %s %s", char3, char3, char3, char3);
         System.out.printf("\n%5s %s %s %s %s", char3, char3, char3, char3, char3);
-        System.out.printf("\n %6s %s %s %s", char3, char3, char3, char3);
-        System.out.printf("\n  %7s %s %s", char3 ,char3, char3);
-        System.out.printf("\n   %8s %s", char3, char3);
-        System.out.printf("\n    %9s", char3);
+        System.out.printf("\n%7s %s %s %s", char3, char3, char3, char3);
+        System.out.printf("\n%9s %s %s", char3 ,char3, char3);
+        System.out.printf("\n%11s %s", char3, char3);
+        System.out.printf("\n%13s", char3);
       break;
       
       // Pirámide con el vértice hacia la derecha
