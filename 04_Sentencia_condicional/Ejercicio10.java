@@ -31,7 +31,7 @@ public class Ejercicio10 {
       break;
       
       case 4:
-        if ((dia > 31) || (dia <= 0)) {
+        if ((dia > 30) || (dia <= 0)) {
           System.out.print("\n¡Error!, por favor, introduzca un día válido.");
         } else if (dia >= 21) {
           System.out.print("\nSu signo del zodiaco es Tauro ♉");
@@ -51,7 +51,7 @@ public class Ejercicio10 {
       break;
        
       case 6:
-        if ((dia > 31) || (dia <= 0)) {
+        if ((dia > 30) || (dia <= 0)) {
           System.out.print("\n¡Error!, por favor, introduzca un día válido.");
         } else if (dia >= 22) {
           System.out.print("\nSu signo del zodiaco es Cáncer ♋");
@@ -81,7 +81,7 @@ public class Ejercicio10 {
       break;
       
       case 9:
-        if ((dia > 31) || (dia <= 0)) {
+        if ((dia > 30) || (dia <= 0)) {
           System.out.print("\n¡Error!, por favor, introduzca un día válido.");
         } else if (dia >= 24) {
           System.out.print("\nSu signo del zodiaco es Libra ♎");
@@ -101,7 +101,7 @@ public class Ejercicio10 {
       break;
       
       case 11:
-        if ((dia > 31) || (dia <= 0)) {
+        if ((dia > 30) || (dia <= 0)) {
           System.out.print("\n¡Error!, por favor, introduzca un día válido.");
         } else if (dia >= 23) {
           System.out.print("\nSu signo del zodiaco es Sagitario ♐");
@@ -131,7 +131,7 @@ public class Ejercicio10 {
       break;
       
       case 2:
-        if ((dia > 31) || (dia <= 0)) {
+        if ((dia > 28) || (dia <= 0)) {
           System.out.print("\n¡Error!, por favor, introduzca un día válido.");
         } else if (dia >= 19) {
           System.out.print("\nSu signo del zodiaco es Piscis ♓");
