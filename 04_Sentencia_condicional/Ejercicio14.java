@@ -24,7 +24,7 @@ public class Ejercicio14 {
     } else if (numero % 5 == 0) {
       System.out.print("\nEl número que ha introducido es divisible entre 5.");
     } else {
-      System.out.print("\nLo siento, el numero que ha introducido no es par, ni divisible entre 5.");
+      System.out.print("\nLo siento, el número que ha introducido no es par ni divisible entre 5.");
     }
   }
 }  

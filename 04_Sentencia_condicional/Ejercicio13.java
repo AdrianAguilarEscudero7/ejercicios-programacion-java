@@ -22,7 +22,7 @@ public class Ejercicio13 {
     
     // Realizamos el algoritmo y mostramos las soluciones por pantalla
     if ((numero1 <= numero2) && (numero2 <= numero3)) {
-      System.out.println("\nLos números se han ordenado de menor a mayor a: " + numero1 + ", " + numero2 + ", 111" + numero3); 
+      System.out.println("\nLos números se han ordenado de menor a mayor a: " + numero1 + ", " + numero2 + ", " + numero3); 
     } else if ((numero1 <= numero3) && (numero3 <= numero2)) {
       System.out.println("\nLos números se han ordenado de menor a mayor a: " + numero1 + ", " + numero3 + ", " + numero2);
     } else if ((numero2 <= numero3) && (numero3 <= numero1)) {
