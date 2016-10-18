@@ -35,8 +35,5 @@ public class Ejercicio20 {
     } else {
       System.out.print("\nEl número " + numero + " no es capicúa.");
     }
-       
-
-  
   }
 }
