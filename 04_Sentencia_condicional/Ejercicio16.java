@@ -17,7 +17,7 @@ public class Ejercicio16 {
   public static void main(String[] args) {
     
     // Presentamos el test e introducimos la pregunta 1
-    System.out.println("\n·Bienvenido al test de infidelidad.");
+    System.out.println("\n·Bienvenid@ al test de infidelidad.");
     System.out.println("--------------------------------------");
     System.out.println("Se le va a realizar algunas preguntas sobre su vida privada. Conteste (V o F).");
     

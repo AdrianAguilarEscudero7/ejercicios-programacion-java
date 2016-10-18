@@ -33,7 +33,7 @@ public class Ejercicio18 {
       System.out.print("\nLa primera cifra de " + numero + " es: " + numero / 10);
     } else if ((numero <= -100) && (numero > -1000)) {
       System.out.print("\nLa primera cifra de " + numero + " es: " + numero / 100);
-    } else if ((numero <= -1000) && (numero >-10000)) {
+    } else if ((numero <= -1000) && (numero >- 10000)) {
       System.out.print("\nLa primera cifra de " + numero + " es: " + numero / 1000);
     } else if ((numero <= -10000) && (numero > -100000)) {
       System.out.print("\nLa primera cifra de " + numero + " es: " + numero / 10000);

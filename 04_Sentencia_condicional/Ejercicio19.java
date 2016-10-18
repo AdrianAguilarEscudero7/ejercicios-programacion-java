@@ -33,7 +33,7 @@ public class Ejercicio19 {
       System.out.print("\nEl número " + numero + " tiene: 2 dígitos.");
     } else if ((numero <= -100) && (numero > -1000)) {
       System.out.print("\nEl número " + numero + " tiene: 3 dígitos.");
-    } else if ((numero <= -1000) && (numero >-10000)) {
+    } else if ((numero <= -1000) && (numero > -10000)) {
       System.out.print("\nEl número " + numero + " tiene: 4 dígitos.");
     } else if ((numero <= -10000) && (numero > -100000)) {
       System.out.print("\nEl número " + numero + " tiene: 5 dígitos.");
