@@ -38,7 +38,7 @@ public class Ejercicio15 {
         System.out.printf("\n  %7s %s %s %s %s", char1, char1, char1, char1, char1);
         System.out.printf("\n %6s %s %s %s %s %s %s", char1, char1, char1, char1, char1, char1, char1);
         System.out.printf("\n%5s %s %s %s %s %s %s %s %s", char1, char1, char1, char1, char1, char1, char1, char1, char1);
-      break;
+        break;
       
       // Pirámide con el vértice hacia abajo
       case 2:
@@ -49,7 +49,7 @@ public class Ejercicio15 {
         System.out.printf("\n  %7s %s %s %s %s", char2, char2, char2, char2, char2);
         System.out.printf("\n   %8s %s %s", char2, char2, char2);
         System.out.printf("\n    %9s", char2);
-      break;
+        break;
       
       // Pirámide con el vértice hacia la izquierda
       case 3:
@@ -64,7 +64,7 @@ public class Ejercicio15 {
         System.out.printf("\n%9s %s %s", char3 ,char3, char3);
         System.out.printf("\n%11s %s", char3, char3);
         System.out.printf("\n%13s", char3);
-      break;
+        break;
       
       // Pirámide con el vértice hacia la derecha
       case 4:
@@ -79,7 +79,7 @@ public class Ejercicio15 {
         System.out.printf("\n%5s %s %s", char4, char4, char4);
         System.out.printf("\n%5s %s", char4, char4);
         System.out.printf("\n%5s", char4);
-      break;
+        break;
       
       default:
         System.out.print("\n¡Error!, por favor, introduzca una opción del menú válida.");
