@@ -11,10 +11,12 @@
 */
 public class Ejercicio18 {
   public static void main(String[] args) {
-
+    
+    // Introducimos el número por teclado
     System.out.print("\nPor favor, introduzca un número entero por teclado. (Máximo 5 cifras): ");
     int numero = Integer.parseInt(System.console().readLine());
     
+    // Establecemos las condiciones y mostramos la soluciones por pantalla
     if ((numero > 0) && (numero < 10)) {
       System.out.print("\nLa primera cifra de " + numero + " es: " + numero);
     } else if ((numero >= 10) && (numero < 100)) {
