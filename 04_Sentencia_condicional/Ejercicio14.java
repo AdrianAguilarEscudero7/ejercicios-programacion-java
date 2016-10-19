@@ -19,12 +19,14 @@ public class Ejercicio14 {
     // Establecemos las condiciones y mostramos las soluciones por pantalla
     if ((numero % 2 == 0) && (numero % 5 == 0)) {
       System.out.print("\nEl número que ha introducido es par y divisible entre 5.");
+    } else if ((numero % 2 != 0) && (numero % 5 == 0 )) {
+      System.out.print("\nEl número que ha introducido es impar, pero es divisible entre 5."); 
     } else if (numero % 2 == 0) {
       System.out.print("\nEl número que ha introducido es par.");
+    } else if (numero % 2 != 0) {
+      System.out.print("\nEl número que ha introducido es impar.");
     } else if (numero % 5 == 0) {
       System.out.print("\nEl número que ha introducido es divisible entre 5.");
-    } else {
-      System.out.print("\nLo siento, el número que ha introducido no es par ni divisible entre 5.");
     }
   }
 }  
