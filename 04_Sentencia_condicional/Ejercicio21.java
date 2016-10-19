@@ -19,6 +19,7 @@
 public class Ejercicio21 {
   public static void main(String[] args) {
   
+    // Presentamos el programa e introducimos los datos por teclado
     System.out.println("\nBienvenid@, vamos a ver cuál ha sido su nota trimestral en programación.");
     System.out.print("\nPor favor, introduzca la nota de su primer examen: ");
     Double examen1 = Double.parseDouble(System.console().readLine());
@@ -26,9 +27,10 @@ public class Ejercicio21 {
     Double examen2 = Double.parseDouble(System.console().readLine());
     System.out.println("------------------------------------------------------------------------");
     
+    // Definimos la variable donde se almacenará la nota media del trimestre
     double media = ((examen1 + examen2) / 2);
 
-
+    // Establecemos las condiciones y mostramos las soluciones por pantalla
     if (((examen1 < 0) || (examen1 > 10)) || ((examen2 < 0) || (examen2 > 10))) {
       System.out.print("\n¡Error!, por favor, introduzca una nota válida.");
     } else if ((media >= 5) && (media <= 10)) {

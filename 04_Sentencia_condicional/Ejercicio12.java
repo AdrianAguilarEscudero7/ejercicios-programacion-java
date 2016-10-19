@@ -16,7 +16,7 @@ public class Ejercicio12 {
   public static void main(String[] args) {
   
     // Presentamos el cuestionario e introducimos la primera pregunta
-    System.out.println("\n¡BIENVENIDO AL MINICUESTIONARIO DE LA CLASE 1º DAW!");
+    System.out.println("\n¡BIENVENID@ AL MINICUESTIONARIO DE LA CLASE 1º DAW!");
     System.out.println("\n· Se le va a realizar 10 preguntas tipo test de todas las asignaturas.");
     System.out.println("-----------------------------------------------------------------------");
     System.out.println("\nPregunta nº1. ¿En qué consiste la tecnología de integración de un microprocesador?.");
@@ -218,7 +218,7 @@ public class Ejercicio12 {
       System.out.println("\nTiene un notable, ¡bien hecho!.");
     } else if ((puntos >= 9) && (puntos <= 10)) {
       System.out.println("\nSu puntuación es de: " + puntos);
-      System.out.println("\nTiene un sobresaliente, muy buen trabajo, sigue así.");
+      System.out.println("\nTiene un sobresaliente, muy buen trabajo, siga así.");
     }
   }
 }
