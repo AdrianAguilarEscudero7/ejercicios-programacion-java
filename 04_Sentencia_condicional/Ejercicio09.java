@@ -13,6 +13,7 @@ public class Ejercicio09 {
   public static void main(String[] args) {
     
     // Introducimos los datos por teclado
+    System.out.print("\nBienvenid@ a la calculadora de ecuaciones de segundo grado (ax² + bx + c = 0).");
     System.out.print("\nPor favor, introduzca la primera constante (a): ");
     int a = Integer.parseInt(System.console().readLine());
     System.out.print("Ahora introduzca la segunda constante (b): ");
@@ -29,7 +30,9 @@ public class Ejercicio09 {
     double cociente = (2 * a);
     
     // Establecemos las condiciones y mostramos las soluciones por pantalla
-    if (cociente == 0) {
+    if ((a == 0) && (b != 0) && (c != 9)) {
+      System.out.print("\nSe trata de una ecuación de primer grado: x = " + (-c/b));
+    } else if (cociente == 0) {
       System.out.print("\n¡Error!, 'no se puede dividir entre 0'.");
     } else if (discriminante == 0) {
       System.out.print("\nLa solución de la ecuación de segundo grado es, x = " + ((-b) / (2 * a)));
