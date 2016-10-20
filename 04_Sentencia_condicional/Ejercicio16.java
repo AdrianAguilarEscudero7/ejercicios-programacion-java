@@ -32,7 +32,6 @@ public class Ejercicio16 {
     if (respuesta1.equals("V")) {
       puntuacion = puntuacion + 3;
     } else if (respuesta1.equals("F")) {
-      puntuacion = puntuacion + 0;
     } else {
       System.out.println("\n¡Error!, lo siento, ha introducido algún valor no válido.");
     }
@@ -47,7 +46,6 @@ public class Ejercicio16 {
     if (respuesta2.equals("V")) {
       puntuacion = puntuacion + 3;
     } else if (respuesta2.equals("F")) {
-      puntuacion = puntuacion + 0;
     } else {
       System.out.println("\n¡Error!, lo siento, ha introducido algún valor no válido.");
     }
@@ -62,7 +60,6 @@ public class Ejercicio16 {
     if (respuesta3.equals("V")) {
       puntuacion = puntuacion + 3;
     } else if (respuesta3.equals("F")) {
-      puntuacion = puntuacion + 0;
     } else {
       System.out.println("\n¡Error!, lo siento, ha introducido algún valor no válido.");
     }
@@ -78,7 +75,6 @@ public class Ejercicio16 {
     if (respuesta4.equals("V")) {
       puntuacion = puntuacion + 3;
     } else if (respuesta4.equals("F")) {
-      puntuacion = puntuacion + 0;
     } else {
       System.out.println("\n¡Error!, lo siento, ha introducido algún valor no válido.");
     }
@@ -93,7 +89,6 @@ public class Ejercicio16 {
     if (respuesta5.equals("V")) {
       puntuacion = puntuacion + 3;
     } else if (respuesta5.equals("F")) {
-      puntuacion = puntuacion + 0;
     } else {
       System.out.println("\n¡Error!, lo siento, ha introducido algún valor no válido.");
     }
@@ -108,7 +103,6 @@ public class Ejercicio16 {
     if (respuesta6.equals("V")) {
       puntuacion = puntuacion + 3;
     } else if (respuesta6.equals("F")) {
-      puntuacion = puntuacion + 0;
     } else {
       System.out.println("\n¡Error!, lo siento, ha introducido algún valor no válido.");
     }
@@ -123,7 +117,6 @@ public class Ejercicio16 {
     if (respuesta7.equals("V")) {
       puntuacion = puntuacion + 3;
     } else if (respuesta7.equals("F")) {
-      puntuacion = puntuacion + 0;
     } else {
       System.out.println("\n¡Error!, lo siento, ha introducido algún valor no válido.");
     }
@@ -138,7 +131,6 @@ public class Ejercicio16 {
     if (respuesta8.equals("V")) {
       puntuacion = puntuacion + 3;
     } else if (respuesta8.equals("F")) {
-      puntuacion = puntuacion + 0;
     } else {
       System.out.println("\n¡Error!, lo siento, ha introducido algún valor no válido.");
     }
@@ -153,7 +145,6 @@ public class Ejercicio16 {
     if (respuesta9.equals("V")) {
       puntuacion = puntuacion + 3;
     } else if (respuesta9.equals("F")) {
-      puntuacion = puntuacion + 0;
     } else {
       System.out.println("\n¡Error!, lo siento, ha introducido algún valor no válido.");
     }
@@ -168,21 +159,20 @@ public class Ejercicio16 {
     if (respuesta10.equals("V")) {
       puntuacion = puntuacion + 3;
     } else if (respuesta10.equals("F")) {
-      puntuacion = puntuacion + 0;
     } else {
       System.out.println("\n¡Error!, lo siento, ha introducido algún valor no válido.");
     }
     System.out.println("--------------------------------------------------------------------------");
     
     // Establecemos las condiciones finales de puntuación y mostramos los resultados por pantalla
-    if ((puntuacion >= 0) && (puntuacion <= 10)) {
+    if (puntuacion <= 10) {
       System.out.println("\nHa sacado " + puntuacion + " puntos de infidelidad.");
       System.out.print("\n¡Enhorabuena!, su pareja parece ser totalmente fiel.");
-    } else if ((puntuacion >= 11) && (puntuacion <= 22)) {
+    } else if (puntuacion <= 22) {
       System.out.println("\nHa sacado " + puntuacion + " puntos de infidelidad.");
       System.out.print("\nQuizás exista el peligro de otra persona en su vida o en su mente, aunque");
       System.out.print(" seguramente será algo sin importancia. No baje la guardia.");
-    } else if ((puntuacion > 22) && (puntuacion <= 30)) {
+    } else if (puntuacion <= 30) {
       System.out.println("\nHa sacado " + puntuacion + " puntos de infidelidad.");
       System.out.print("\nSu pareja tiene todos los ingredientes para estar viviendo un romance con");
       System.out.print(" otra persona. Le aconsejamos que indague un poco más y averigüe qué es");
