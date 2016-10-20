@@ -34,6 +34,7 @@ public class Ejercicio23 {
     // Establecemos las condiciones y mostramos las soluciones por pantalla
     if (baseImp < 0) {
       System.out.print("¡Error!, por favor, introduzca una base imponible positiva.");
+      
     } else if ((iva.equals("general")) && (promocion.equals("nopromo")))  {
       System.out.printf("\nBase imponible: %18.2f€", baseImp);
       System.out.printf("\nIVA seleccionado: %16.2f€\n", (baseImp * 0.21));
@@ -51,6 +52,7 @@ public class Ejercicio23 {
       System.out.printf("%10.2f€", ((baseImp * 0.21) + baseImp));
       System.out.printf("\nCódigo promoción (mitad): %6.2f€", (- mitad));
       System.out.printf("\nTOTAL: %25.2f€", (((baseImp * 0.21) + baseImp) - mitad));
+      
     } else if ((iva.equals("general")) && (promocion.equals("-5€"))) {
       System.out.printf("\nBase imponible: %14.2f€", baseImp);
       System.out.printf("\nIVA seleccionado: %12.2f€\n", (baseImp * 0.21));
@@ -58,6 +60,7 @@ public class Ejercicio23 {
       System.out.printf("%8.2f€", ((baseImp * 0.21) + baseImp));
       System.out.printf("\nCódigo promoción (-5€): %6.2f€", menos5);
       System.out.printf("\nTOTAL: %23.2f€", (((baseImp * 0.21) + baseImp) + menos5));
+      
     } else if ((iva.equals("general")) && (promocion.equals("5%"))) {
       
       double cincoPorciento = (((baseImp * 0.21) + baseImp) * 0.05);
@@ -69,6 +72,7 @@ public class Ejercicio23 {
       System.out.print("\nCódigo promoción (5%): "); 
       System.out.printf("%7.2f€", (- cincoPorciento));
       System.out.printf("\nTOTAL: %23.2f€", (((baseImp * 0.21) + baseImp) - cincoPorciento));
+      
     } else if ((iva.equals("reducido")) && (promocion.equals("nopromo"))) {
       System.out.printf("\nBase imponible: %18.2f€", baseImp);
       System.out.printf("\nIVA seleccionado: %16.2f€\n", (baseImp * 0.1));
@@ -76,6 +80,7 @@ public class Ejercicio23 {
       System.out.printf("%12.2f€", ((baseImp * 0.1) + baseImp));
       System.out.printf("\nCódigo promoción (nopromo): %6.2f€", (- nopromo));
       System.out.printf("\nTOTAL: %27.2f€", (((baseImp * 0.1) + baseImp) - nopromo));
+      
     } else if ((iva.equals("reducido")) && (promocion.equals("mitad"))) {
       
       double mitad = (((baseImp * 0.1) + baseImp) / 2);
@@ -86,6 +91,7 @@ public class Ejercicio23 {
       System.out.printf("%10.2f€", ((baseImp * 0.1) + baseImp));
       System.out.printf("\nCódigo promoción (mitad): %6.2f€", (- mitad));
       System.out.printf("\nTOTAL: %25.2f€", (((baseImp * 0.1) + baseImp) - mitad));
+      
     } else if ((iva.equals("reducido")) && (promocion.equals("-5€"))) {
       System.out.printf("\nBase imponible: %14.2f€", baseImp);
       System.out.printf("\nIVA seleccionado: %12.2f€\n", (baseImp * 0.1));
@@ -93,6 +99,7 @@ public class Ejercicio23 {
       System.out.printf("%8.2f€", ((baseImp * 0.1) + baseImp));
       System.out.printf("\nCódigo promoción (-5€): %6.2f€", menos5);
       System.out.printf("\nTOTAL: %23.2f€", (((baseImp * 0.1) + baseImp) + menos5));
+      
     } else if ((iva.equals("reducido")) && (promocion.equals("5%"))) {
       
       double cincoPorciento = (((baseImp * 0.1) + baseImp) * 0.05);
@@ -104,6 +111,7 @@ public class Ejercicio23 {
       System.out.print("\nCódigo promoción (5%): "); 
       System.out.printf("%7.2f€", (- cincoPorciento));
       System.out.printf("\nTOTAL: %23.2f€", (((baseImp * 0.1) + baseImp) - cincoPorciento));
+      
     } else if ((iva.equals("superreducido")) && (promocion.equals("nopromo"))) {
       System.out.printf("\nBase imponible: %18.2f€", baseImp);
       System.out.printf("\nIVA seleccionado: %16.2f€\n", (baseImp * 0.04));
@@ -121,6 +129,7 @@ public class Ejercicio23 {
       System.out.printf("%11.2f€", ((baseImp * 0.04) + baseImp));
       System.out.printf("\nCódigo promoción (mitad): %6.2f€", (- mitad));
       System.out.printf("\nTOTAL: %25.2f€", (((baseImp * 0.04) + baseImp) - mitad));
+      
     } else if ((iva.equals("superreducido")) && (promocion.equals("-5€"))) {
       System.out.printf("\nBase imponible: %14.2f€", baseImp);
       System.out.printf("\nIVA seleccionado: %12.2f€\n", (baseImp * 0.04));
@@ -128,6 +137,7 @@ public class Ejercicio23 {
       System.out.printf("%9.2f€", ((baseImp * 0.04) + baseImp));
       System.out.printf("\nCódigo promoción (-5€): %6.2f€", menos5);
       System.out.printf("\nTOTAL: %23.2f€", (((baseImp * 0.04) + baseImp) + menos5));
+      
     } else if ((iva.equals("superreducido")) && (promocion.equals("5%"))) {
       
       double cincoPorciento = (((baseImp * 0.04) + baseImp) * 0.05);
@@ -139,6 +149,7 @@ public class Ejercicio23 {
       System.out.print("\nCódigo promoción (5%): "); 
       System.out.printf("%7.2f€", (- cincoPorciento));
       System.out.printf("\nTOTAL: %23.2f€", (((baseImp * 0.04) + baseImp) - cincoPorciento));
+      
     } else {
       System.out.println("\n¡Error!, ha introducido algún carácter no válido.");
     }
