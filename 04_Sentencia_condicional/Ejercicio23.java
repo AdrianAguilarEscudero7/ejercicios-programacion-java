@@ -42,6 +42,7 @@ public class Ejercicio23 {
       System.out.printf("%12.2f€", ((baseImp * 0.21) + baseImp));
       System.out.printf("\nCódigo promoción (nopromo): %6.2f€", (- nopromo));
       System.out.printf("\nTOTAL: %27.2f€", (((baseImp * 0.21) + baseImp) - nopromo));
+      
     } else if ((iva.equals("general")) && (promocion.equals("mitad"))) {
       
       double mitad = (((baseImp * 0.21) + baseImp) / 2);
@@ -119,6 +120,7 @@ public class Ejercicio23 {
       System.out.printf("%13.2f€", ((baseImp * 0.04) + baseImp));
       System.out.printf("\nCódigo promoción (nopromo): %6.2f€", (- nopromo));
       System.out.printf("\nTOTAL: %27.2f€", (((baseImp * 0.04) + baseImp) - nopromo));
+      
     } else if ((iva.equals("superreducido")) && (promocion.equals("mitad"))) {
       
       double mitad = (((baseImp * 0.04) + baseImp) / 2);
