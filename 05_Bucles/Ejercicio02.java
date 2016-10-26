@@ -1,6 +1,6 @@
 /**
 * 
-* Muestra los números múltiplos de 5 de 0 a 100 utilizando un bucle for.
+* Muestra los números múltiplos de 5 de 0 a 100 utilizando un bucle while .
 *
 *
 *
@@ -11,18 +11,22 @@
 
 import java.util.Scanner;
 
-public class Ejercicio01 {
+public class Ejercicio02 {
   public static void main(String[] args) {
     
+    // Definimos las variables
+    int i = 1;
+    int multiplo = 5;
+    
     // Creamos el bucle correspondiente
-    for (int i = 1; i < 101; i++) {
-      int multiplo = 5;
+    while (i < 101) {
       
-      // Establecemos las condiciones y mostramos por pantalla el resultado
       if (i % multiplo == 0) {
         System.out.println(i);
       } else {
       }
-    }
+      i++;
+    }  
   }
 }
+    
