@@ -69,7 +69,6 @@ public class Ejercicio07 {
         System.out.println("            |/");
       }
     } while ((combinacion != 2772) && (intentos >= 0)); 
-    
   }
 }
  
