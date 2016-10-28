@@ -49,7 +49,7 @@ public class Ejercicio07 {
         System.out.println("\nLo siento, esa no es la combinación, le quedan " + intentos + " intentos más.");
         System.out.println("-----------------------------------------------------------------------------");
         intentos--;
-      } else if (combinacion == 2772) {
+      } else {
         System.out.println("\nSu caja fuerte se ha abierto satisfactoriamente.");
         System.out.println("     ________________");
         System.out.println("    /_______________/|");
