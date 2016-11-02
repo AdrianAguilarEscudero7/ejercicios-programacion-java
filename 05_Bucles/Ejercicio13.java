@@ -37,12 +37,8 @@ public class Ejercicio13 {
         positivos++;
       }
     }
-    
     // Mostramos el resultado por pantallla
     System.out.println("-----------------------------------------------------------------------------");
     System.out.println("\nHay " + positivos + " números positivos, y " + negativos + " números negativos.");
-
-    
-    
   }
 }
