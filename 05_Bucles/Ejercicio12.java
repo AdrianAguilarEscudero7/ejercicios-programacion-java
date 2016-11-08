@@ -26,14 +26,14 @@ public class Ejercicio12 {
     // Definimos las variables
     int numero1 = 0;
     int numero2 = 1;
-    int fibonacci = 0; // Aquí sumaremos los dos números anteriores
+    int fibonacci = 1; // Aquí sumaremos los dos números anteriores
   
     // Salto de línea fuera del bucle
-    System.out.println("");
+    System.out.println();
     
     // Creamos el bucle y mostramos el resultado, puede que no sea el correspondiente, ya que me falta un número 1 en la serie...
     for (int i = 1; i <= terminos; i++) {
-      System.out.print(fibonacci + ", ");
+      System.out.print(numero1 + ", ");
       fibonacci = numero2 + numero1;
       numero1 = numero2;
       numero2 = fibonacci;
