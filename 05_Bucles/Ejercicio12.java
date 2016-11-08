@@ -31,7 +31,7 @@ public class Ejercicio12 {
     // Salto de línea fuera del bucle
     System.out.println();
     
-    // Creamos el bucle y mostramos el resultado, puede que no sea el correspondiente, ya que me falta un número 1 en la serie...
+    // Creamos el bucle y mostramos el resultado por pantalla
     for (int i = 1; i <= terminos; i++) {
       System.out.print(numero1 + ", ");
       fibonacci = numero2 + numero1;
