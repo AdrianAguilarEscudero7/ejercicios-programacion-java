@@ -19,12 +19,19 @@ public class Ejercicio28 {
     Scanner s = new Scanner(System.in);
     
     // Presentamos el programa e introducimos los datos por teclado
-    System.out.println("\nBienvenid@, en este programa calcularemos el factorial '!' de un número entero introducido por usted.");
+    System.out.print("\nBienvenid@, en este programa calcularemos el factorial '!' de un número"); 
+    System.out.println(" entero mayor que 0, introducido por usted.");
     System.out.println("-----------------------------------------------------------------------------");
-    System.out.print("\nPor favor, introduzca un número entero: ");
-    int numeroIntroducido = Integer.parseInt(s.nextLine());
-    int factorial = numeroIntroducido;
+    int numeroIntroducido;
+    int factorial;
     
+    // Comprueba que el número introducido es mayor que 0
+    do {
+      System.out.print("\nPor favor, introduzca un número entero positivo mayor que 0: ");
+      numeroIntroducido = Integer.parseInt(s.nextLine());
+    } while (numeroIntroducido <= 0);
+    
+    factorial = numeroIntroducido;
     // Realiza el factorial al número introducido
     for (int i = numeroIntroducido-1; i >= 1; i--) {
      factorial = factorial * i;
