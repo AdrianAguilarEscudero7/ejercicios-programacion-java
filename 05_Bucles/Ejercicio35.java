@@ -51,14 +51,14 @@ public class Ejercicio35 {
     while (filas1 <= ((altura/2)+1)) {
         
       // Pintamos los espacios exteriores de la parte superior de la 'X'
-      for (int j = 1; j < filas1; j++) { 
+      for (int i = 1; i < filas1; i++) { 
         System.out.print(" ");
       }
       System.out.print("*");
         
       // Pintamos los espacios interiores de la parte superior hasta que llegue al vértice 
       if (filas1 < ((altura/2)+1)) {
-        for (int k = 0; k < espaciosDentro1-2; k++) {
+        for (int j = 0; j < espaciosDentro1-2; j++) {
           System.out.print(" ");
         }
         System.out.print("*");
@@ -73,13 +73,13 @@ public class Ejercicio35 {
     while (filas2 <= altura/2) {
       
       // Pintamos los espacios exteriores de la parte inferior de la 'X'
-      for (int l = 1; l < espaciosFuera; l++) {
+      for (int k = 1; k < espaciosFuera; k++) {
         System.out.print(" ");
       }
       System.out.print("*");
       
       // Pintamos los espacios interiores de la parte inferior de la 'X'
-      for (int n = 1; n < espaciosDentro2; n++) {
+      for (int l = 1; l < espaciosDentro2; l++) {
         System.out.print(" ");
       }
       System.out.print("*");
