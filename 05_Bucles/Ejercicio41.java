@@ -28,7 +28,7 @@ public class Ejercicio41 {
     System.out.println(" un número introducido por teclado.");
     System.out.println("-----------------------------------------------------------------------------");
     System.out.print("\nPor favor, introduzca un número entero positivo: ");
-    long numeroIntroducido = Integer.parseInt(s.nextLine());
+    long numeroIntroducido = Long.parseLong(s.nextLine());
     
     // Declaramos las variables
     long numero = numeroIntroducido;
