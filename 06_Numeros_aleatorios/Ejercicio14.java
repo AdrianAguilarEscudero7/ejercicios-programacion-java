@@ -42,13 +42,13 @@ public class Ejercicio14 {
         // Si la respuesta del usuario es "mayor", el mínimo será igual al número pensado por la máquina + 1
         if (tamaño.equals("MAYOR")) {
           minimo = numeroSecreto + 1;
-        // Si es "menor", el máximo sera igual al número pensado por la máquina - 1  
+        // Si es "menor", el máximo será igual al número pensado por la máquina - 1  
         } else if (tamaño.equals("MENOR")) {
           maximo = numeroSecreto - 1;
         }
       }
       oportunidades--;
-      if (oportunidades < 0) {
+      if ((oportunidades < 0) && (!respuesta.equals("SI"))) {
         System.out.println("\nVaya.. no he conseguido adivinar su número... :(");
       }
     } while ((!respuesta.equals("SI")) && (oportunidades >= 0)); 
