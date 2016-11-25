@@ -27,6 +27,9 @@ public class Ejercicio14 {
     String respuesta; // Almacena la respuesta del usuario (si/no)
     String tamaño; // Almacena la respuesta del tamaño del usuario (mayor/menor)
     
+    System.out.print("\nCuando lo haya pensado pulse intro para continuar...");
+    String intro = s.nextLine();
+    
     // Intenta adivinar el número del usuario y pregunta si es mayor o menor
     do {
       int numeroSecreto = (int)(Math.random()*(maximo - minimo) + minimo);
