@@ -22,6 +22,7 @@ public class Ejercicio05 {
     System.out.println("-----------------------------------------------------------------------------");
     int minimo = Integer.MAX_VALUE; // Almacena un valor muy alto para hacer el mínimo
     int maximo = Integer.MIN_VALUE; // Almacena un valor muy pequeño para hacer el máximo
+    int contador = 0;
     int suma = 0; // Almacenará la suma total de todos los números
     System.out.println();
     
@@ -35,11 +36,12 @@ public class Ejercicio05 {
         minimo = numeros;
       }
       suma = suma + numeros;
+      contador++;
     }
     // Muestra los resultados por pantalla
     System.out.println("\n-----------------------------------------------------------------------------");
     System.out.println("\nEl número más pequeño de esos 50 es el " + minimo);
     System.out.println("\nEl número más grande de esos 50 es el " + maximo);
-    System.out.println("\nLa media de esos números es de " + suma / 2);
+    System.out.println("\nLa media de esos números es de " + suma / contador);
   }
 }
