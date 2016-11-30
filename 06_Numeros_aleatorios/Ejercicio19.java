@@ -26,7 +26,6 @@ public class Ejercicio19 {
     int minimoImpar = 200; // Almacena una cantidad máxima para determinar el número mínimo
     int numeros;
     int suma = 0; // Almacena la suma total 
-    int contador = 0; // Cuenta los números aleatorios de 1 en 1
     
     // Genera los 50 números aleatorios
     for (int i = 1; i <= 50; i++) {
@@ -40,12 +39,11 @@ public class Ejercicio19 {
       }
       System.out.print(numeros + " ");
       suma = suma + numeros;
-      contador++;
     }
     System.out.println();
     System.out.println("-----------------------------------------------------------------------------");
     System.out.println("\nEL máximo de los pares es el " + maximoPar);
     System.out.println("\nEl mínimo de los impares es el " + minimoImpar);
-    System.out.println("\nLa media de todos los números es de " + suma/contador);
+    System.out.println("\nLa media de todos los números es de " + suma/50);
   }
 }
