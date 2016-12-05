@@ -19,7 +19,8 @@ public class Ejercicio04 {
   public static void main(String[] args) {
     Scanner s = new Scanner(System.in);
     
-    System.out.print("Bienvenid@, este programa mostrará 3 columnas de 20 números aleatorios cada una");
+    // Presentamos el programa
+    System.out.print("\nBienvenid@, este programa mostrará 3 columnas de 20 números aleatorios cada una");
     System.out.println(", la segunda mostrará el cuadrado y la tercera el cubo de esos 20 números aleatorios.");
     System.out.println("------------------------------------------------------------------------------");
     System.out.println();
@@ -29,12 +30,14 @@ public class Ejercicio04 {
     int cubo[] = new int[20];
     int i;
     
+    // Almacenamos 20 números en cada uno de los 3 arrays
     for (i = 0; i < 20; i++) {
       numero[i] = (int)(Math.random()*101);
       cuadrado[i] = numero[i] * numero[i];
       cubo[i] = cuadrado[i] * numero[i];
     }
     
+    // Mostramos los 20 números de cada uno de los 3 arrays
     System.out.print("|  n  |   n²  |   n³   |\n");
     System.out.println("------------------------");
     for (int j = 0; j < 20; j++) {
