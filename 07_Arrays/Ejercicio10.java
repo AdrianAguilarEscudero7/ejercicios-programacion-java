@@ -24,7 +24,7 @@ public class Ejercicio10 {
     
     int numero[] = new int[20];
     int par[] = new int[20]; // Almacena los números pares
-    int impar[] = new int[20]; // Alamcena los números impares
+    int impar[] = new int[20]; // Almacena los números impares
     int contadorPares = 0; 
     int contadorImpares = 0;
     
