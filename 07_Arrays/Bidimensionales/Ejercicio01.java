@@ -27,7 +27,7 @@ public class Ejercicio01 {
     System.out.println("│Array num│Columna 0│Columna 1│Columna 2│Columna 3│Columna 4│Columna 5│");
     System.out.println("├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤");
     for (int y = 0; y < 3; y++) {
-    System.out.print("│ Fila " + y + "  ");
+      System.out.print("│ Fila " + y + "  ");
       for (int x = 0; x < 6; x++) {
         Thread.sleep(500);
         System.out.printf("│%5d    ", num[y][x]);
