@@ -48,4 +48,23 @@ public class Maths {
     }
     return true;
   }
+  
+  /**
+   * Devuelve el menor primo que es mayor al número que
+   * se pasa como parámetro.
+   * 
+   * Ejercicio03
+   *
+   * @param x un número entero positivo
+   * @return el número primo siguiente al introducido
+   */
+  public static int siguientePrimo(int x) {
+    int primoSiguiente = x+1;
+    for (int n = 2; n < primoSiguiente; n++) {
+      if (primoSiguiente % n == 0) {
+        primoSiguiente++;
+      }
+    }
+    return primoSiguiente;
+  }
 } 
