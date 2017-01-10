@@ -29,4 +29,23 @@ public class Maths {
     } 
     return true;
   }
+  
+  /**
+   * Devuelve verdadero si el número que se pasa como parámetro
+   * es primo y falso en caso contrario.
+   * 
+   * Ejercicio02
+   *
+   * @param x un número entero positivo
+   * @return <code>true</code> si el número es primo
+   * @return <code>false</code> en caso contrario
+   */
+  public static boolean esPrimo(int x) {
+    for (int n = 2; n < x; n++) {
+      if (x % n == 0) {
+        return false;
+      }
+    }
+    return true;
+  }
 } 
