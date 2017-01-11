@@ -67,4 +67,21 @@ public class Maths {
     }
     return primoSiguiente;
   }
+  
+  /**
+   * Dada una base y un exponente devuelve la potencia.
+   * 
+   * Ejercicio04
+   *
+   * @param x un número entero positivo
+   * @param y un número entero positivo
+   * @return el resultado de la potencia
+   */
+  public static int potencia(int x, int y) {
+    int potencia = 1;
+    for (int i = 0; i < y; i++) {
+      potencia *= x;
+    }
+    return potencia;
+  }
 } 
