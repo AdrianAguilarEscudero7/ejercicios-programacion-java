@@ -84,4 +84,25 @@ public class Maths {
     }
     return potencia;
   }
+  
+  /**
+   * Cuenta el número de dígitos de un número entero.
+   * 
+   * Ejercicio05
+   *
+   * @param x un número entero
+   * @return el número de dígitos
+   */
+  public static int digitos(int x) {
+    int contador = 0;
+    if (x == 0) {
+      contador = 1;
+    } else {
+      while (Math.abs(x) > 0) {
+      x /= 10;
+      contador++;
+      }
+    }
+    return contador;
+  }
 } 
