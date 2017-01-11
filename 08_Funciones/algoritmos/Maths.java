@@ -99,10 +99,54 @@ public class Maths {
       contador = 1;
     } else {
       while (Math.abs(x) > 0) {
-      x /= 10;
-      contador++;
+        x /= 10;
+        contador++;
       }
     }
     return contador;
+  }
+  
+   /**
+   * Le da la vuelta a un número.
+   * 
+   * Ejercicio06
+   *
+   * @param x un número entero
+   * @return el número al revés
+   */
+  public static int voltea(int x) {
+    int numeroReves = 0;
+    while (x > 0) {
+      numeroReves = (numeroReves * 10) + (x % 10);
+      x /= 10;
+    }
+    return numeroReves;
+  }
+  
+  /**
+   * Devuelve el dígito que está en la posición n de un número
+   * entero. Se empieza contando por el 0 y de izquierda a derecha.
+   * 
+   * Ejercicio07
+   *
+   * @param x un número entero
+   * @param y un número entero
+   * @return el dígito de la posición introducida
+   */
+  public static int digitoN(int x, int y) {
+    int contador = 0;
+    int digito = 0;
+    boolean salir = false;
+    int numero = Maths.voltea(x);
+    while ((numero > 0) && (!salir)) {
+      if (contador == y) {
+        digito = numero % 10;
+        salir = true;
+      } else {
+        numero /= 10;
+        contador++;
+      }
+    }
+    return digito;
   }
 } 
