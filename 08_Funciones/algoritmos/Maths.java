@@ -194,4 +194,26 @@ public class Maths {
     } while((x > 0) && (contador != y));
     return x;
   }
-} 
+  
+  /**
+   * Le quita a un número n dígitos por delante (por la
+   * izquierda).
+   * 
+   * Ejercicio10  
+   *
+   * @param x un número entero positivo
+   * @param y un número entero positivo
+   * @return el número modificado
+   */
+  public static int quitaPorDelante(int x, int y) {
+    int contador = 0;
+    int numero = Maths.voltea(x);
+    do {
+      while (contador < y) {
+        numero /= 10;
+        contador++;
+      }
+    } while ((numero > 0) && (contador != y));
+    return Maths.voltea(numero);
+  }
+}
