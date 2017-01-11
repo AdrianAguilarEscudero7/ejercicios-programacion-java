@@ -173,4 +173,25 @@ public class Maths {
     }
     return -1;
   }
+  
+  /**
+   * Le quita a un número n dígitos por detrás (por la
+   * derecha).
+   * 
+   * Ejercicio09
+   *
+   * @param x un número entero positivo
+   * @param y un número entero positivo
+   * @return el número modificado
+   */
+  public static int quitaPorDetras(int x, int y) {
+    int contador = 0;
+    do {
+      while (contador < y) {
+        x /= 10;
+        contador++;
+      }
+    } while((x > 0) && (contador != y));
+    return x;
+  }
 } 
