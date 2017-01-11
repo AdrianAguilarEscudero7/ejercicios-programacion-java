@@ -149,4 +149,28 @@ public class Maths {
     }
     return digito;
   }
+  
+  /**
+   * Da la posición de la primera ocurrencia de un dígito
+   * dentro de un número entero. Si no se encuentra, devuelve -1
+   * 
+   * Ejercicio08
+   *
+   * @param x un número entero positivo
+   * @param y un número entero positivo
+   * @return la posición del dígito introducido
+   * @return -1 en caso de que no se encuentre
+   */
+  public static int posicionDeDigito(int x, int y) {
+    int posicion = 0;
+    int numero = Maths.voltea(x);
+    while (numero > 0) {
+      if (numero % 10 == y) {
+        return posicion;
+      }
+      numero /= 10;
+      posicion++;
+    }
+    return -1;
+  }
 } 
