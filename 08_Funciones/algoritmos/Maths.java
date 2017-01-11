@@ -229,5 +229,20 @@ public class Maths {
   public static int pegaPorDetras(int x, int y) {
     int numero = (x*10)+y;
     return numero;
-  } 
+  }
+  
+  /**
+   * Añade un dígito a un número por delante.
+   * 
+   * Ejercicio12  
+   *
+   * @param x un número entero positivo
+   * @param y un número entero positivo
+   * @return el número modificado
+   */
+  public static int pegaPorDelante(int x, int y) {
+    int numero = Maths.voltea(x);
+    int numeroModif = (numero*10) + y;
+    return Maths.voltea(numeroModif);
+  }
 }
