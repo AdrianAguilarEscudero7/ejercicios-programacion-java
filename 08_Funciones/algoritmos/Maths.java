@@ -216,4 +216,18 @@ public class Maths {
     } while ((numero > 0) && (contador != y));
     return Maths.voltea(numero);
   }
+  
+  /**
+   * Añade un dígito a un número por detrás.
+   * 
+   * Ejercicio11  
+   *
+   * @param x un número entero positivo
+   * @param y un número entero positivo
+   * @return el número modificado
+   */
+  public static int pegaPorDetras(int x, int y) {
+    int numero = (x*10)+y;
+    return numero;
+  } 
 }
