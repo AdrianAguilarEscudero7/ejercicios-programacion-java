@@ -17,14 +17,8 @@ public class Maths {
    * @return <code>true</code> si el número es capicúa
    * @return <code>false</code> en caso contrario
    */
-  public static boolean esCapicua(long x) {
-    long numeroReves = 0;
-    long numeroIntroducido = x;
-    while (x > 0) {
-      numeroReves = (numeroReves * 10) + (x % 10);
-      x /= 10;
-    }
-    if (numeroIntroducido != numeroReves) {
+  public static boolean esCapicua(int x) {
+    if (x != Maths.voltea(x)) {
       return false;
     } 
     return true;
@@ -244,5 +238,56 @@ public class Maths {
     int numero = Maths.voltea(x);
     int numeroModif = (numero*10) + y;
     return Maths.voltea(numeroModif);
+  }
+  
+  /**
+   * Toma como parámetros las posiciones inicial y final
+   * dentro de un número y devuelve el trozo correspondiente.
+   * 
+   * Ejercicio13  
+   *
+   * @param x un número entero positivo
+   * @param y un número entero positivo
+   * @param z un número entero positivo
+   * @return el número modificado
+   */
+  public static int trozoDeNumero(int x, int y, int z) {
+    int numeroModif = 0;
+    int numeroReves = Maths.voltea(x);
+    int contadorY = 0;
+    int contadorZ = 0;
+    do {
+      if ((contadorY == y) && (contadorZ <= z)) {
+        numeroModif = (numeroModif * 10) + (numeroReves % 10);
+      }
+      numeroReves /= 10;
+      if (contadorY < y) {
+        contadorY++;
+      }
+      contadorZ++;
+    } while (contadorZ <= z);
+    return numeroModif;
+  }
+  /**
+   * Pega dos números para formar uno.
+   * 
+   * Ejercicio14  
+   *
+   * @param x un número entero positivo
+   * @param y un número entero positivo
+   * @return el número modificado
+   */
+  public static int juntaNumeros(int x, int y) {
+    int contador = 0;
+    int numero = y;
+    while (y > 0) {
+      y /= 10;
+      contador++;
+    }
+    for (int i = 0; i < contador; i++) {
+      x *= 10;
+    }
+    int numeroModif = x+numero;
+    return numeroModif;
   }
 }
