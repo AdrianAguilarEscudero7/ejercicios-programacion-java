@@ -290,4 +290,116 @@ public class Maths {
     int numeroModif = x+numero;
     return numeroModif;
   }
+  
+  /**
+   * Da la vuelta a un número que acabe en 0
+   *
+   * @param x un número entero positivo
+   * @return el número al revés
+   */
+  public static String voltea0(int x) {
+    String numeroReves = "";
+    for (int i = 1; i <= Maths.digitos(x); i++) {
+      numeroReves += ((int)((x % Math.pow(10,i)) / Math.pow(10,i-1)));
+    }
+    return numeroReves;
+  }
+  
+  /**
+   * Convierte de binario a decimal
+   *
+   * @param x un número entero positivo
+   * @return la base del tipo decimal
+   */
+  public static int binDecimal(int x) {
+    int potencia = 0;
+    int suma = 0;
+    int num = x;
+    for (int i = 0; i < Maths.digitos(x); i++) {
+      potencia = (int)Math.pow(2,i);
+      if (num % 10 == 1) {
+        suma += potencia;
+      }
+      num /= 10;
+    }
+    return suma;
+  }
+  
+  /**
+   * Convierte de binario a hexadecimal
+   *
+   * @param x un número entero positivo
+   * @return la base del tipo hexadecimal
+   */
+  public static int binHexa(int x) {
+    return x;
+  }
+  
+  /**
+   * Convierte de binario a octal
+   *
+   * @param x un número entero positivo
+   * @return la base del tipo octal
+   */
+  public static int binOctal(int x) {
+    int suma = 0;
+    int numeroIntroducido = x;
+    int contador = Maths.digitos(numeroIntroducido);
+    int i = 1;
+    
+    while (i <= contador) {
+      for (int j = 1; j <= 3; j++) {
+        int sumaParcial = 0;
+        if ((j == 1) && (x % 10 == 1)) {
+          sumaParcial += 1;
+        } else if ((j == 2) && (x % 10 == 1)) {
+          sumaParcial += 2;
+        } else if ((j == 3) && (x % 10 == 1)) {
+          sumaParcial += 4;
+        }
+        x /= 10;
+        suma += sumaParcial;
+        i++;
+      }
+      if (i <= contador) {
+        suma *= 10;
+      }
+    }
+    return Maths.voltea(suma);
+  }
+  
+  /**
+   * Convierte de decimal a binario
+   *
+   * @param x un número entero positivo
+   * @return la base del tipo binaria
+   */
+  public static String DecimalBin(int x) {
+    int potencia = 0;
+    int contador = 0;
+    int numeroIntroducido = x;
+    
+    do {
+      potencia = Maths.potencia(2,contador);
+      contador++;
+    } while (x / potencia != 0);
+    
+    potencia /= 2;
+    String numBin = "";
+    
+    if (x == 0) {
+      numBin = "0";
+    } else {
+      do {
+        if (x / potencia == 1) {
+          numBin += "1";
+          x -= potencia;
+        } else {
+          numBin += "0";
+        }
+        potencia /= 2;
+      } while (potencia != 0);
+    }
+    return numBin;
+  }
 }
