@@ -21,14 +21,9 @@ public class Ejercicio17 {
     System.out.print("Por favor, introduzca un número binario: ");
     int numeroBin = s.nextInt();
     
-    int numeroDecimal = 0;
-    int numeroBinReves = Maths.voltea(numeroBin);
+    // Realiza la conversión de binario a decimal
+    int numeroDecimal = Maths.binDecimal(numeroBin);
     
-    // Realiza la conversión de binario a decimal por el método de duplicación
-    while (numeroBinReves > 0) {
-      numeroDecimal = (numeroDecimal * 2) + (numeroBinReves % 10);
-      numeroBinReves /= 10;
-    } 
-    System.out.print("\nEl número que ha introducido en base 10 es el " + numeroDecimal);
+    System.out.print("\nEl número " + numeroBin + " convertido a decimal es el " + numeroDecimal);
   }
 }
