@@ -23,7 +23,7 @@ public class Ejercicio18 {
     System.out.println();
     
     // Se realiza la conversión de decimal a binario
-    String numBin = Maths.DecimalBin(numeroBase10);
+    String numBin = Maths.decimalBin(numeroBase10);
     
     System.out.print("El " + numeroBase10 + " convertido a binario es el: " + numBin);
   }

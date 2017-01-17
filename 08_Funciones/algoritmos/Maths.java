@@ -326,28 +326,17 @@ public class Maths {
   }
   
   /**
-   * Convierte de binario a hexadecimal
-   *
-   * @param x un número entero positivo
-   * @return la base del tipo hexadecimal
-   */
-  public static int binHexa(int x) {
-    return x;
-  }
-  
-  /**
    * Convierte de binario a octal
    *
    * @param x un número entero positivo
    * @return la base del tipo octal
    */
-  public static int binOctal(int x) {
+  public static long binOctal(long x) {
     int suma = 0;
-    int numeroIntroducido = x;
-    int contador = Maths.digitos(numeroIntroducido);
+    int numeroIntroducido = (int)x;
     int i = 1;
     
-    while (i <= contador) {
+    while (i <= Maths.digitos(numeroIntroducido)) {
       for (int j = 1; j <= 3; j++) {
         int sumaParcial = 0;
         if ((j == 1) && (x % 10 == 1)) {
@@ -361,7 +350,7 @@ public class Maths {
         suma += sumaParcial;
         i++;
       }
-      if (i <= contador) {
+      if (i <= Maths.digitos(numeroIntroducido)) {
         suma *= 10;
       }
     }
@@ -374,7 +363,7 @@ public class Maths {
    * @param x un número entero positivo
    * @return la base del tipo binaria
    */
-  public static String DecimalBin(int x) {
+  public static String decimalBin(int x) {
     int potencia = 0;
     int contador = 0;
     int numeroIntroducido = x;
@@ -401,5 +390,131 @@ public class Maths {
       } while (potencia != 0);
     }
     return numBin;
+  }
+  
+  /**
+   * Convierte de decimal a hexadecimal
+   *
+   * @param x un número entero positivo
+   * @return la base del tipo hexadecimal
+   */
+  public static String decimalHexa(int x) {
+    int potencia = 0;
+    int contador = 0;
+    
+    do {
+      potencia = Maths.potencia(16,contador);
+      contador++;
+    } while (x / potencia != 0);
+    
+    potencia /= 16;
+    
+    int respuesta = 0;
+    boolean salir = false;
+    String numHexa = "";
+    
+    do {
+      respuesta = x / potencia;
+      if ((x >= 0) && (x <= 15)) {
+        respuesta = x;
+        salir = true;
+      }
+      x -= (respuesta * potencia);
+      if ((respuesta >= 0) && (respuesta <= 9)) {
+        numHexa += respuesta;
+      } else if ((respuesta > 9) && (respuesta <= 15)) {
+        switch (respuesta) {
+          case 10:
+            numHexa += "A";
+          break;
+          case 11:
+            numHexa += "B";
+          break;
+          case 12:
+            numHexa += "C";
+          break;
+          case 13:
+            numHexa += "D";
+          break;
+          case 14:
+            numHexa += "E";
+          break;
+          case 15:
+            numHexa += "F";
+          break;
+          default:
+        }
+      }
+      potencia /= 16;
+    } while (!salir);
+    return numHexa;
+  }
+  
+  /**
+   * Convierte de hexadecimal a decimal
+   *
+   * @param x una cadena de caracteres
+   * @return la base del tipo decimal
+   */
+  public static int hexaDecimal(String x) {
+    int potencia = 0;
+    int numeroDecimal = 0;
+    
+    for (int i = 0; i < x.length(); i++) {
+      potencia = Maths.potencia(16,i);
+    }
+    
+    for (int i = 0; i < x.length(); i++) {
+      boolean salir = false;
+      String caracter = "";
+      caracter += x.charAt(i);
+      for (int j = 0; j < 10 && !salir; j++) {
+        if (caracter.equals(String.valueOf(j))) {
+          numeroDecimal += (Integer.parseInt(caracter) * potencia);
+          salir = true;
+        }
+      }
+      switch (caracter) {
+        case "A":
+          numeroDecimal += (10*potencia);
+        break;
+        case "B":
+          numeroDecimal += (11*potencia);
+        break;
+        case "C":
+          numeroDecimal += (12*potencia);
+        break;
+        case "D":
+          numeroDecimal += (13*potencia);
+        break;
+        case "E":
+          numeroDecimal += (14*potencia);
+        break;
+        case "F":
+          numeroDecimal += (15*potencia);
+        break;
+        default:      
+      }
+      potencia /= 16;
+    }
+    return numeroDecimal;
+  }
+
+  /**
+   * Convierte de octal a decimal
+   *
+   * @param x un número entero positivo
+   * @return la base del tipo octal
+   */
+  public static int octalDecimal(int x) {
+    int numeroIntroducido = x;
+    int suma = 0;
+    for (int i = 0; i < Maths.digitos(numeroIntroducido); i++) {
+      int potencia = 0;
+      potencia = (Maths.potencia(8,i)) * (x % 10);
+      suma += potencia;
+      x /= 10;
+    }
+    return suma;
   }
 }
