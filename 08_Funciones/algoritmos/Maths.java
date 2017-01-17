@@ -6,7 +6,7 @@
 package algoritmos;
  
 public class Maths {
-  
+
   /**
    * Devuelve verdadero si el número que se pasa como pará-
    * metro es capicúa y falso en caso contrario.
@@ -23,6 +23,8 @@ public class Maths {
     } 
     return true;
   }
+  
+//##################################################################################################
   
   /**
    * Devuelve verdadero si el número que se pasa como parámetro
@@ -43,6 +45,8 @@ public class Maths {
     return true;
   }
   
+//##################################################################################################
+  
   /**
    * Devuelve el menor primo que es mayor al número que
    * se pasa como parámetro.
@@ -62,6 +66,8 @@ public class Maths {
     return primoSiguiente;
   }
   
+//##################################################################################################
+  
   /**
    * Dada una base y un exponente devuelve la potencia.
    * 
@@ -78,6 +84,8 @@ public class Maths {
     }
     return potencia;
   }
+  
+//##################################################################################################
   
   /**
    * Cuenta el número de dígitos de un número entero.
@@ -100,7 +108,9 @@ public class Maths {
     return contador;
   }
   
-   /**
+//##################################################################################################
+  
+  /**
    * Le da la vuelta a un número.
    * 
    * Ejercicio06
@@ -116,6 +126,8 @@ public class Maths {
     }
     return numeroReves;
   }
+  
+//##################################################################################################
   
   /**
    * Devuelve el dígito que está en la posición n de un número
@@ -144,6 +156,8 @@ public class Maths {
     return digito;
   }
   
+//##################################################################################################
+  
   /**
    * Da la posición de la primera ocurrencia de un dígito
    * dentro de un número entero. Si no se encuentra, devuelve -1
@@ -168,6 +182,8 @@ public class Maths {
     return -1;
   }
   
+//##################################################################################################
+  
   /**
    * Le quita a un número n dígitos por detrás (por la
    * derecha).
@@ -188,6 +204,8 @@ public class Maths {
     } while((x > 0) && (contador != y));
     return x;
   }
+  
+//##################################################################################################
   
   /**
    * Le quita a un número n dígitos por delante (por la
@@ -211,6 +229,8 @@ public class Maths {
     return Maths.voltea(numero);
   }
   
+//##################################################################################################
+  
   /**
    * Añade un dígito a un número por detrás.
    * 
@@ -224,6 +244,8 @@ public class Maths {
     int numero = (x*10)+y;
     return numero;
   }
+
+//##################################################################################################
   
   /**
    * Añade un dígito a un número por delante.
@@ -239,6 +261,8 @@ public class Maths {
     int numeroModif = (numero*10) + y;
     return Maths.voltea(numeroModif);
   }
+  
+//##################################################################################################
   
   /**
    * Toma como parámetros las posiciones inicial y final
@@ -268,6 +292,9 @@ public class Maths {
     } while (contadorZ <= z);
     return numeroModif;
   }
+  
+//##################################################################################################
+  
   /**
    * Pega dos números para formar uno.
    * 
@@ -290,6 +317,8 @@ public class Maths {
     int numeroModif = x+numero;
     return numeroModif;
   }
+  
+//##################################################################################################
   
   /**
    * Da la vuelta a un número que acabe en 0
@@ -325,6 +354,8 @@ public class Maths {
     return suma;
   }
   
+//##################################################################################################
+  
   /**
    * Convierte de binario a octal
    *
@@ -356,6 +387,8 @@ public class Maths {
     }
     return Maths.voltea(suma);
   }
+  
+//##################################################################################################  
   
   /**
    * Convierte de decimal a binario
@@ -391,6 +424,8 @@ public class Maths {
     }
     return numBin;
   }
+  
+//##################################################################################################  
   
   /**
    * Convierte de decimal a hexadecimal
@@ -450,6 +485,8 @@ public class Maths {
     return numHexa;
   }
   
+//##################################################################################################
+  
   /**
    * Convierte de hexadecimal a decimal
    *
@@ -499,6 +536,8 @@ public class Maths {
     }
     return numeroDecimal;
   }
+  
+//##################################################################################################
 
   /**
    * Convierte de octal a decimal
