@@ -410,10 +410,10 @@ public class Maths {
    * @param x un número entero positivo
    * @return la base del tipo binaria
    */
-  public static String decimalBin(int x) {
+  public static String decimalBin(long x) {
     int potencia = 0;
     int contador = 0;
-    int numeroIntroducido = x;
+    long numeroIntroducido = x;
     
     do {
       potencia = Maths.potencia(2,contador);
@@ -447,7 +447,7 @@ public class Maths {
    * @param x un número entero positivo
    * @return la base del tipo hexadecimal
    */
-  public static String decimalHexa(int x) {
+  public static String decimalHexa(long x) {
     int potencia = 0;
     int contador = 0;
     
@@ -463,9 +463,9 @@ public class Maths {
     String numHexa = "";
     
     do {
-      respuesta = x / potencia;
+      respuesta = (int)(x / potencia);
       if ((x >= 0) && (x <= 15)) {
-        respuesta = x;
+        respuesta = (int)x;
         salir = true;
       }
       x -= (respuesta * potencia);
@@ -559,11 +559,11 @@ public class Maths {
    * @param x un número entero positivo
    * @return la base del tipo octal
    */
-  public static int octalDecimal(int x) {
-    int numeroIntroducido = x;
+  public static long octalDecimal(long x) {
+    long numeroIntroducido = x;
     int suma = 0;
     for (int i = 0; i < Maths.digitos(numeroIntroducido); i++) {
-      int potencia = 0;
+      long potencia = 0;
       potencia = (Maths.potencia(8,i)) * (x % 10);
       suma += potencia;
       x /= 10;
