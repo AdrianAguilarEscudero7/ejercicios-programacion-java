@@ -65,7 +65,7 @@ public class Ejercicio19 {
     System.out.println("-----------------------------------------------------------------------------\n");
     
     String numeroHexadecimal = "";    
-    int numeroIntroducido = 0;
+    long numeroIntroducido = 0;
     
     // Se introduce un string o un número por teclado
     if (tipoBase == 3) {
@@ -73,7 +73,7 @@ public class Ejercicio19 {
       numeroHexadecimal = i.nextLine().toUpperCase();
     } else {
       System.out.print("Por favor, introduzca un número en base " + sTipoBase + ": ");
-      numeroIntroducido = s.nextInt();
+      numeroIntroducido = s.nextLong();
     }
 
     System.out.println("-----------------------------------------------------------------------------\n");
@@ -145,7 +145,7 @@ public class Ejercicio19 {
       // Convierte de hexadecimal a octal
     } else if ((tipoBase == 3) && (tipoBase2 == 4)) {
       System.out.print("El número " + numeroHexadecimal + " convertido a octal es el ");
-      int hexaDecimal = Maths.hexaDecimal(numeroHexadecimal);
+      long hexaDecimal = Maths.hexaDecimal(numeroHexadecimal);
       String decimalBin = Maths.decimalBin(hexaDecimal);
       Long binOctal = Long.parseLong(decimalBin);
       System.out.print(Maths.binOctal(binOctal));
@@ -163,7 +163,7 @@ public class Ejercicio19 {
       // Convierte de octal a hexadecimal
     } else if ((tipoBase == 4) && (tipoBase2 == 3)) {
       System.out.print("El número " + numeroIntroducido + " convertido a hexadecimal es el ");
-      int octalDecimal = Maths.octalDecimal(numeroIntroducido);
+      long octalDecimal = Maths.octalDecimal(numeroIntroducido);
       System.out.print(Maths.decimalHexa(octalDecimal));
     }
   }
