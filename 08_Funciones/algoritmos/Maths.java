@@ -95,7 +95,7 @@ public class Maths {
    * @param x un número entero
    * @return el número de dígitos
    */
-  public static int digitos(int x) {
+  public static int digitos(long x) {
     int contador = 0;
     if (x == 0) {
       contador = 1;
@@ -106,6 +106,20 @@ public class Maths {
       }
     }
     return contador;
+  }
+
+//##################################################################################################
+  
+  /**
+   * Cuenta el número de dígitos de un número entero.
+   * 
+   * Ejercicio05
+   *
+   * @param x un número entero
+   * @return el número de dígitos
+   */
+  public static int digitos(int x) {
+    return digitos((long)x);
   }
   
 //##################################################################################################
@@ -340,11 +354,11 @@ public class Maths {
    * @param x un número entero positivo
    * @return la base del tipo decimal
    */
-  public static int binDecimal(int x) {
-    int potencia = 0;
-    int suma = 0;
-    int num = x;
-    for (int i = 0; i < Maths.digitos(x); i++) {
+  public static long binDecimal(long x) {
+    long potencia = 0;
+    long suma = 0;
+    long num = x;
+    for (int i = 0; i < digitos(x); i++) {
       potencia = (int)Math.pow(2,i);
       if (num % 10 == 1) {
         suma += potencia;
