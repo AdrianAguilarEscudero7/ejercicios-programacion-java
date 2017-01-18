@@ -12,7 +12,7 @@ public class Array {
    *
    * @param x un array
    */
-  public static void muestraArray(int[] x) {
+  public static void muestraArrayInt(int[] x) {
     for (int i = 0; i < x.length; i++) {
       System.out.print(x[i] + " ");
     }

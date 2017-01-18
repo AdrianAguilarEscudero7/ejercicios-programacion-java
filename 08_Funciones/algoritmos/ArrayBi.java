@@ -12,7 +12,7 @@ public class ArrayBi {
    *
    * @param x un array
    */
-  public static void muestraArrayBi(int[][] x) {
+  public static void muestraArrayBiInt(int[][] x) {
     for (int i = 0; i < x.length; i++) {
       for (int j = 0; j < x[i].length; j++) {
         System.out.printf("%4d ", x[i][j]);
@@ -46,4 +46,26 @@ public class ArrayBi {
   }
   
 //##################################################################################################
+
+  /**
+   * Devuelve la fila i-ésima del array que se pasa como parámetro.
+   * 
+   * Ejercicio30
+   *
+   * @param x un array bidimensional
+   * @param f un número entero positivo
+   * @return un array (la fila n del array bidimensional)
+   */
+  public static int[] filaDeArrayBiInt(int[][] x, int f) {
+    int[] array = new int[x.length];
+    
+    for (int i = 0; i < x.length; i++) {
+      if (i == f) {
+        for (int j = 0; j < x[i].length; j++) {
+          array[j] = x[i][j];
+        }
+      }
+    }
+    return array;
+  }
 }
