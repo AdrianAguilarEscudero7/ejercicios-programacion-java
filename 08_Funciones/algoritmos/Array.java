@@ -6,23 +6,19 @@
 package algoritmos;
  
 public class Array {
-
-//##################################################################################################
   
   /**
-   * Devuelve el mínimo del array que se pasa como
-   * parámetro.
-   * 
-   * Ejercicio21
+   * Muestra el array que se introduce.
    *
    * @param x un array
-   * @return el mínimo del array introducido
    */
   public static void muestraArray(int[] x) {
     for (int i = 0; i < x.length; i++) {
-      System.out.print(x[i]);
+      System.out.print(x[i] + " ");
     }
   }
+  
+//##################################################################################################  
 
   /**
    * Genera un array de tamaño n con números aleatorios
@@ -31,8 +27,8 @@ public class Array {
    * Ejercicio20
    *
    * @param x un número entero positivo
-   * @param y un número entero
-   * @param z un número entero
+   * @param maximo un número entero
+   * @param minimo un número entero
    * @return el array correspondiente a los parámetros introducidos
    */
   public static int[] generaArrayInt(int x, int maximo, int minimo) {
@@ -207,7 +203,7 @@ public class Array {
   /**
    * Rota n posiciones a la izquierda los números de un array.
    *
-   * Ejercicio27
+   * Ejercicio28
    *
    * @param x un array
    * @param y un número entero positivo
