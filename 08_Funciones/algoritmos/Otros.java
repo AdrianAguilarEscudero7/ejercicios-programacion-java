@@ -217,4 +217,53 @@ public class Otros {
     }
     return numPalabra;
   }
+  
+//##################################################################################################
+
+  /**
+   * Devuelve un array con todos los números que contienen el 7 
+   * (por ej. 7, 27, 782) que se encuentren en 
+   * otro array que se pasa como parámetro.
+   * 
+   * Ejercicio40
+   *
+   * @param x un array unidimensional
+   * @return un array con los números capicúa filtrados
+   */
+  public static int[] filtraCon7(int[] x) {
+    int tamaño = 0;
+    boolean salir = false;
+    for (int i = 0; i < x.length; i++) {
+      int numeroReves = Maths.voltea(x[i]);
+      salir = false;
+      
+      while ((numeroReves > 0) && (!salir)) {
+        if (numeroReves % 10 == 7) {
+          tamaño++;
+          salir = true;
+        }
+        numeroReves /= 10;
+      }
+    }
+    int[] array = new int[tamaño];
+    int posicion = 0;
+    for (int i = 0; i < x.length; i++) {
+      int numeroReves2 = Maths.voltea(x[i]);
+      salir = false;
+      
+      while ((numeroReves2 > 0) && (!salir)){
+        if (numeroReves2 % 10 == 7) {
+          array[posicion] = x[i];
+          posicion++;
+          salir = true;
+        }
+        numeroReves2 /= 10;
+      }
+    }
+    if (array.length == 0) {
+      array = new int[1];
+      array[0] = -1;
+    }
+    return array;
+  }
 }
