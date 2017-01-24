@@ -153,4 +153,68 @@ public class Otros {
     }
     return array;
   }
+  
+//##################################################################################################
+
+  /**
+   * Esta función convierte los dígitos del número n en las correspondientes
+   * palabras y lo devuelve todo en una cadena de caracteres.
+   * 
+   * Ejercicio39
+   *
+   * @param x un número entero positivo
+   * @return una cadena de caracteres con las palabras correspondientes a cada número introducido
+   */
+  public static String convierteEnPalabras(int x) {
+    int numeroReves = Maths.voltea(x);
+    int digitos = Maths.digitos(x);
+    String numPalabra = "";
+    
+    if (x == 0) {
+      numPalabra = "cero";
+    } else {
+      while (numeroReves > 0) {
+        switch (numeroReves % 10) {
+          case 1:
+            numPalabra += "uno";
+          break;
+          case 2:
+            numPalabra += "dos";
+          break;
+          case 3:
+            numPalabra += "tres";
+          break;
+          case 4:
+            numPalabra += "cuatro";
+          break;
+          case 5:
+            numPalabra += "cinco";
+          break;
+          case 6:
+            numPalabra += "seis";
+          break;
+          case 7:
+            numPalabra += "siete";
+          break;
+          case 8:
+            numPalabra += "ocho";
+          break;
+          case 9:
+            numPalabra += "nueve";
+          break;
+          case 0:
+            numPalabra += "cero";
+          break;
+          default:
+        }
+        numeroReves /= 10;
+        digitos--;
+        
+        if (digitos > 0) {
+          numPalabra += ", ";
+        }
+      }
+    }
+    return numPalabra;
+  }
 }
