@@ -120,4 +120,37 @@ public class Otros {
     }
     return morse;
   }
+  
+//##################################################################################################
+
+  /**
+   * Devuelve un array con todos los números capicúa que se 
+   * encuentren en otro array que se pasa como parámetro.
+   * 
+   * Ejercicio38
+   *
+   * @param x un array unidimensional
+   * @return un array con los números capicúa filtrados
+   */
+  public static int[] filtraCapicuas(int[] x) {
+    int tamaño = 0;
+    for (int i = 0; i < x.length; i++) {
+      if (Maths.esCapicua(x[i])) {
+        tamaño++;
+      }
+    }
+    int[] array = new int[tamaño];
+    int posicion = 0;
+    for (int i = 0; i < x.length; i++) {
+      if (Maths.esCapicua(x[i])) {
+        array[posicion] = x[i];
+        posicion++;
+      }
+    }
+    if (array.length == 0) {
+      array = new int[1];
+      array[0] = -1;
+    }
+    return array;
+  }
 }
