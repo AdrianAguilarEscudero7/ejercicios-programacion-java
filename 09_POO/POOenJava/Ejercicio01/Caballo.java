@@ -40,13 +40,13 @@ public class Caballo {
     this.temperamento = "Nervioso";
   }
   public String toString() {
-    return "\n****************************"
+    return "****************************"
         + "\nSexo: " + this.sexo
         + "\n" + "Raza: " + this.raza
         + "\n" + "Edad: " + this.edad
         + "\n" + "Altura: " + this.altura
         + "\n" + "Temperamento: " + this.temperamento
-        + "\n****************************\n";
+        + "\n****************************";
   }
   public void come(String c) {
     if (c.equals("vegetales")) {

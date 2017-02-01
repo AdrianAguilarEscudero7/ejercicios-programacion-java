@@ -12,17 +12,18 @@ import ejercicio01.Caballo.Sexo;
 public class PruebaCaballo {
   public static void main(String[] args) {
     Scanner s = new Scanner(System.in);
-    Scanner t = new Scanner(System.in);
+    
     
     System.out.println("\nIntroduzca los siguientes campos para el caballo Benji.");
     System.out.print("Raza: ");
     String raza = s.nextLine();
     System.out.print("\nEdad: ");
-    int edad = s.nextInt();
+    int edad = Integer.parseInt(s.nextLine());
     System.out.print("\nAltura (en cm): ");
-    int altura = s.nextInt();
+    int altura = Integer.parseInt(s.nextLine());
     System.out.print("\nTemperamento: ");
-    String temp = t.nextLine();
+    String temp = s.nextLine();
+    System.out.println();
     
     Caballo benji = new Caballo(Sexo.MACHO,raza,edad,altura,temp);
     Caballo yesi = new Caballo(Sexo.HEMBRA);
