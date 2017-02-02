@@ -24,5 +24,7 @@ public class PruebaFraccion {
     System.out.println("\n" + f3);
     
     System.out.println("\n" + f3.simplifica());
+    
+    System.out.println("\n" + f2.invierte());
   }
 }

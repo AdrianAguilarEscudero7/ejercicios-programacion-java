@@ -21,10 +21,8 @@ public class Fraccion {
     return this.numerador + "/" + this.denominador;
   }
   
-  public void invierte() {
-    int aux = this.numerador;
-    this.numerador = this.denominador;
-    this.denominador = aux;
+  public Fraccion invierte() {
+    return new Fraccion(this.denominador, this.numerador);
   }
   
   public Fraccion multiplica(Fraccion n) {
