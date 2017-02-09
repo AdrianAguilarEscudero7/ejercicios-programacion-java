@@ -25,7 +25,7 @@ public class ColeccionDeDiscos {
 
   public static void main(String[] args) {
     Scanner s = new Scanner(System.in);
-    Disco[] disco = new Disco[3];
+    Disco[] disco = new Disco[20];
     
     // Inserta de inicio un disco y deja los 19 restantes en blanco.
     for (int i = 0; i < disco.length; i++) {
