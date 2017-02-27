@@ -1,0 +1,23 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 27-feb-2017, 18:58:43
+    Author     : adri
+*/
+
+.body {
+  background-image: url(divisas.jpg);
+}
+
+.div {
+  margin: auto;
+  margin-top: 20%;
+  width: 500px;
+}
+
+.white {
+  background-color: white;
+}
