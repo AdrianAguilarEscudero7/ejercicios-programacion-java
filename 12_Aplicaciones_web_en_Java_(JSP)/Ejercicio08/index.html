@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+  <head>
+    <title>Ejercicio08</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Adrián Aguilar">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <form action="calendario.jsp" method="post">
+      <fieldset>
+        <legend>Generador de Calendarios</legend>
+        *Introduzca el nombre del mes y, el año:
+        <input type="text" name="mes" required>
+        <input type="text" name="anio" required><br>
+        Introduzca el texto que desea que aparezca sobre el calendario:
+        <input type="text" name="texto" maxlength="18"><br>
+        *Introduzca el día de la semana en que cae el día 1:
+        <input type="text" name="dia1" required>
+        *Nº de días que tiene el mes:
+        <input type="text" name="numdias" required>
+      </fieldset>
+      <input type="submit" value="GENERAR">
+    </form>
+  </body>
+</html>
